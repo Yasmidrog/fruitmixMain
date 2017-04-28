@@ -54,22 +54,17 @@ html, body {
     align-items: center;
     justify-content: center;
     a[id="nav1"]:target ~ #main div.parallax-layer {
-        -webkit-transition:all 180ms ease-out;
-
         -webkit-transform: translateY(0%);
         transform: translateY(0%);
     }
-
     a[id="nav2"]:target ~ #main div.parallax-layer {
         -webkit-transform: translateY(-100%) ;
         transform: translateY(-100%);
     }
-
     a[id="nav3"]:target ~ #main div.parallax-layer {
         -webkit-transform: translateY(-200%) ;
         transform: translateY(-200%);
     }
-
 }
 
 .bigtext{
