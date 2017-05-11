@@ -1,13 +1,14 @@
-$small: "screen and (max-width: 600px)";
+@import "vars";
 @import url(//fonts.googleapis.com/css?family=Open+Sans);
-@import "sidebar";
-@import "main";
+
 html, body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     background-color: #212121;
     height: 100vh;
     margin: 0;
     padding: 0;
-    width: 100%;
     * {
         font-family: 'Open Sans Light', sans-serif;
     }
@@ -32,14 +33,15 @@ a{
     overflow-y: hidden;
     display: flex;
     flex-direction: row;
-    align-items: center;
+
     justify-content: center;
     @media #{$small} {
         flex-direction: column;
         padding: 0;
     }
-    position:absolute;
-    width: 100%;
+    padding: 3% 0 0 0;
+    width: 940px;
+    max-height: 940px;
     height: 100%;
 }
 .wrapper >*{
@@ -47,7 +49,5 @@ a{
     height: 100%;
 }
 
-
-
-
-
+@import "sidebar";
+@import "main";
