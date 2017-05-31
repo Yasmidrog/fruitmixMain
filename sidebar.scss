@@ -1,5 +1,7 @@
 .sidebar{
-
+  @media #{$small} {
+    margin-top:3%
+  }
   flex: 1;
   display: flex;
   flex-flow: column nowrap;
