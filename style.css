@@ -30,7 +30,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 3% 0 0 0;
+  padding: 6% 0 0 0;
   width: 940px;
   max-height: 940px;
   height: 100%; }
@@ -54,7 +54,13 @@ a {
   .sidebar div.filler {
     flex: 2; }
   .sidebar div.menu {
+    margin-left: 13%;
     flex: 6; }
+    @media screen and (max-width: 580px) {
+      .sidebar div.menu {
+        margin-left: 0; } }
+    .sidebar div.menu p {
+      margin: 4% 0; }
   .sidebar div.title {
     flex: 1;
     display: flex;
@@ -81,12 +87,10 @@ a {
           width: 55px;
           height: 55px;
           right: -5px; } }
-  .sidebar div.menu p {
-    margin: 4% 0; }
   @media screen and (max-width: 580px) {
     .sidebar {
       padding: 0;
-      margin-left: 5%;
+      margin-left: 0;
       width: 100%;
       flex-flow: row nowrap;
       align-items: center; }

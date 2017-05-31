@@ -1,5 +1,5 @@
-
 .sidebar{
+
   flex: 1;
   display: flex;
   flex-flow: column nowrap;
@@ -11,6 +11,13 @@
     flex: 2;
   }
   div.menu{
+    margin-left: 13%;
+    @media #{$small} {
+      margin-left: 0;
+    }
+    p {
+      margin: 4% 0;
+    }
     flex: 6;
   }
   div.title {
@@ -44,15 +51,9 @@
       height: 75px;
     }
   }
-  div.menu{
-    p {
-
-      margin: 4% 0;
-    }
-  }
   @media #{$small} {
     padding: 0;
-    margin-left: 5%;
+    margin-left: 0;
     width: 100%;
     flex-flow: row nowrap;
     align-items: center;
