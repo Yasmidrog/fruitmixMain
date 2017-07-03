@@ -1,4 +1,6 @@
 .sidebar{
+  font-family: "Lato Light", sans-serif;
+  color: white;
   @media #{$small} {
     margin-top:3%
   }
@@ -13,12 +15,17 @@
     flex: 2;
   }
   div.menu{
+
+
     margin-left: 13%;
     @media #{$small} {
       margin-left: 0;
     }
     p {
       margin: 4% 0;
+   a{
+     font-family: "Lato Light";
+   }
     }
     flex: 6;
   }
