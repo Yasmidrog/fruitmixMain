@@ -1,8 +1,8 @@
-.sidebar{
+.sidebar {
   font-family: "Lato Light", sans-serif;
   color: white;
   @media #{$small} {
-    margin-top:3%
+    margin-top: 3%
   }
   flex: 1;
   display: flex;
@@ -11,21 +11,22 @@
   justify-content: center;
   height: 100vh;
   max-height: 940px;
-  div.filler{
+  div.filler {
     flex: 2;
   }
-  div.menu{
-
-
+  div.menu {
+    .nav_el:hover{
+      color: gold;
+    }
     margin-left: 13%;
     @media #{$small} {
       margin-left: 0;
     }
     p {
       margin: 4% 0;
-   a{
-     font-family: "Lato Light";
-   }
+      a {
+        font-family: "Lato Light";
+      }
     }
     flex: 6;
   }
@@ -66,12 +67,12 @@
     width: 100%;
     flex-flow: row nowrap;
     align-items: center;
-    div.menu{
+    div.menu {
       display: flex;
       flex-flow: row nowrap;
       justify-content: center;
       width: 100%;
-      padding: 0 10% 0 0 ;
+      padding: 0 10% 0 0;
       p {
         margin: 0 5px;
         flex: 1;
@@ -79,7 +80,7 @@
         text-align: center;
       }
     }
-    .filler{
+    .filler {
       display: none;
     }
   }
