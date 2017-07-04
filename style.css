@@ -182,34 +182,21 @@ a {
           .main div.page_wrap .page .intro {
             padding: 5% 3%;
             margin: 0; } }
-      .main div.page_wrap .page .projlist_wrap {
-        display: flex;
-        width: 600px;
-        overflow: hidden;
-        flex-flow: row nowrap; }
-        @media screen and (max-width: 760px) {
-          .main div.page_wrap .page .projlist_wrap {
-            padding: 0;
-            overflow-x: auto;
-            width: 100vw; } }
-        .main div.page_wrap .page .projlist_wrap .project {
-          display: flex;
-          flex-flow: column nowrap;
-          justify-content: center;
-          align-items: center;
-          height: auto;
-          width: 230px; }
-          @media screen and (max-width: 599px) {
-            .main div.page_wrap .page .projlist_wrap .project {
-              min-width: 100vw; } }
-          .main div.page_wrap .page .projlist_wrap .project .caption {
-            font-size: 1.45rem; }
-        .main div.page_wrap .page .projlist_wrap .project:hover {
-          cursor: pointer; }
       @media screen and (max-width: 760px) and (orientation: landscape) {
         .main div.page_wrap .page {
           height: 130%; } }
 
+.contacts .text {
+  margin: 0;
+  padding: 0; }
+  .contacts .text p, .contacts .text .socwrap {
+    width: 100%; }
+  .contacts .text .soc {
+    margin: 10px; }
+
+@font-face {
+  font-family: 'Lato Light';
+  src: url(./Lato-Light.ttf); }
 .projects {
   display: flex;
   flex-flow: column;
@@ -231,13 +218,29 @@ a {
       bottom: 5px; }
     .projects .arrows .arrow {
       display: inline; }
-
-.contacts .text {
-  margin: 0;
-  padding: 0; }
-  .contacts .text p, .contacts .text .socwrap {
-    width: 100%; }
-  .contacts .text .soc {
-    margin: 10px; }
+  .projects .projlist_wrap {
+    display: flex;
+    width: 600px;
+    overflow: hidden;
+    flex-flow: row nowrap; }
+    @media screen and (max-width: 760px) {
+      .projects .projlist_wrap {
+        padding: 0;
+        overflow-x: auto;
+        width: 100vw; } }
+    .projects .projlist_wrap .project {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      width: 230px; }
+      @media screen and (max-width: 599px) {
+        .projects .projlist_wrap .project {
+          min-width: 100vw; } }
+      .projects .projlist_wrap .project .caption {
+        font-size: 1.45rem; }
+    .projects .projlist_wrap .project:hover {
+      cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

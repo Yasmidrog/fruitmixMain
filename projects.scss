@@ -1,0 +1,57 @@
+@import "vars";
+.projects {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  @media #{$small} {
+    align-items: center;
+  }
+  .arrows {
+    @media screen and (max-width: 599px) {
+      display: none;
+    }
+    .count {
+      margin: 0 10px;
+      font-size: 18pt;
+      font-weight: bold;
+      position: relative;
+      bottom: 5px;
+    }
+    padding-top: 8%;
+    width: 90%;
+    .arrow {
+      display: inline;
+    }
+  }
+  .projlist_wrap {
+    display: flex;
+    width: 600px;
+    overflow: hidden;
+    flex-flow: row nowrap;
+
+    @media #{$small} {
+      padding: 0;
+      overflow-x: auto;
+      width: 100vw;
+    }
+
+    .project {
+      @media screen and (max-width: 599px) {
+        min-width: 100vw;
+      }
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      width: 230px;
+      .caption {
+        font-size: 1.45rem;
+      }
+    }
+    .project:hover {
+      cursor: pointer;
+    }
+  }
+
+}
