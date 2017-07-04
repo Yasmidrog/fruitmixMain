@@ -49,7 +49,7 @@
     div.logo {
       position: relative;
       top: -30px;
-      background-image: url(logo.svg);
+      background-image: url(res/img/logo.svg);
       background-repeat: no-repeat;
       @media #{$small} {
         top: -5px;
