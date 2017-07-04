@@ -176,10 +176,12 @@ a {
     .main div.page_wrap .page .text {
       font-size: 4vh; } }
 
-      @media screen and (max-width: 760px) {
-        .main div.page_wrap .page .intro {
-          padding: 5% 3%;
-          margin: 0; } }
+      .main div.page_wrap .page .intro {
+        padding: 12% 0 0 10%; }
+        @media screen and (max-width: 760px) {
+          .main div.page_wrap .page .intro {
+            padding: 5% 3%;
+            margin: 0; } }
       .main div.page_wrap .page .projlist_wrap {
         display: flex;
         width: 600px;
@@ -202,30 +204,40 @@ a {
               min-width: 100vw; } }
           .main div.page_wrap .page .projlist_wrap .project .caption {
             font-size: 1.45rem; }
+        .main div.page_wrap .page .projlist_wrap .project:hover {
+          cursor: pointer; }
       @media screen and (max-width: 760px) and (orientation: landscape) {
         .main div.page_wrap .page {
           height: 130%; } }
 
-#projects {
+.projects {
   display: flex;
   flex-flow: column;
   align-items: flex-end; }
   @media screen and (max-width: 760px) {
-    #projects {
+    .projects {
       align-items: center; } }
-  #projects .arrows {
-    padding-top: 3%;
+  .projects .arrows {
+    padding-top: 8%;
     width: 90%; }
     @media screen and (max-width: 599px) {
-      #projects .arrows {
+      .projects .arrows {
         display: none; } }
-    #projects .arrows .count {
+    .projects .arrows .count {
       margin: 0 10px;
       font-size: 18pt;
       font-weight: bold;
       position: relative;
       bottom: 5px; }
-    #projects .arrows .arrow {
+    .projects .arrows .arrow {
       display: inline; }
+
+.contacts .text {
+  margin: 0;
+  padding: 0; }
+  .contacts .text p, .contacts .text .socwrap {
+    width: 100%; }
+  .contacts .text .soc {
+    margin: 10px; }
 
 /*# sourceMappingURL=style.css.map */
